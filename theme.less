@@ -1,0 +1,163 @@
+/* Define some variables used in multiple places */
+@background: #e2e0de;
+@foreground: #3a3739;
+
+/* Code Styling */
+
+.CodeMirror, .CodeMirror-scroll {
+    background-color: @background;
+    color: @foreground;
+}
+
+.CodeMirror-focused .CodeMirror-activeline-background {
+    background: #d0d0d0;
+}
+
+.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
+    box-shadow: inset 15px 0 0 0 #fff;
+}
+
+.CodeMirror-focused .CodeMirror-activeline {
+    .CodeMirror-gutter-elt {
+        background: rgba(255, 255, 255, 0.2);
+        color: #000;
+    }
+    .inline-widget .CodeMirror-gutter-elt {
+        color: #898989;    
+    }
+}
+
+.cm-atom, .cm-string, .cm-string-2, .cm-hr, .cm-number {color: #339999;}
+.cm-attribute, .cm-plus, .cm-property {color: #736bbf;}
+.cm-error, .cm-minus {color: #a54242;}
+.cm-link {color: #b294bb; text-decoration: underline;}
+.cm-tag, .cm-quote, .cm-operator, .cm-keyword {color: #216ca0;}
+.cm-meta, .cm-bracket, .cm-comment {color: #a07e62;}
+.cm-qualifier, .cm-builtin, .cm-variable, .cm-variable-2, .cm-variable-3, .cm-def {color: #a17278}
+.cm-m-css.cm-keyword, .cm-header, .cm-rangeinfo {color: #7a9870;}
+
+/* Extra CSS */
+
+.CodeMirror-searching {
+    background-color: rgba(179, 179, 179, 0.6);
+    &.searching-current-match {
+        background-color: rgb(179, 179, 179);
+    }
+}
+
+
+.CodeMirror-cursor {
+    border-left: 1px solid @foreground !important;
+}
+
+.CodeMirror-gutters {
+    background-color: @background;
+    border-right: none;
+}
+
+.CodeMirror-linenumbers {
+    color: #8f877f;
+}
+
+.CodeMirror .CodeMirror-selected {
+    background: #ccc0b7;
+}
+
+.CodeMirror-matchingbracket, .CodeMirror-matchingtag,
+.CodeMirror-focused .CodeMirror-selected {
+    /* Ensure visibility against gray inline editor background */
+    background-color: rgba(179, 179, 179, 0.6);
+}
+
+span.CodeMirror-matchingbracket {
+    color: @foreground !important;
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+    border-left: none !important;
+    border-bottom: 1px solid #000;
+}
+
+.pane-header-text {
+    color: #8f877f;
+}
+
+.active-pane .pane-header > .pane-header-text {
+    color: @foreground;
+}
+
+.pane-header {
+    background: @background !important;
+    opacity: 1;
+    border-bottom-color: rgba(0, 0, 0, 0.15) !important;
+}
+
+.CodeMirror-vscrollbar,
+.CodeMirror-hscrollbar {
+    display: none !important;
+}
+
+.CodeMirror {
+    .CodeMirror {
+        background: transparent;
+    }
+
+    .CodeMirror .CodeMirror-gutters {
+        background: transparent;
+        border-right: none;
+    }
+
+    .CodeMirror .CodeMirror-activeline-background {
+        background: transparent;
+    }
+
+    .CodeMirror .CodeMirror-activeline .CodeMirror-gutter-elt {
+        background: transparent;
+        color: #898989;
+    }
+
+    .CodeMirror-focused .CodeMirror-activeline-background {
+        background: #d0d0d0;
+    }
+
+    .CodeMirror-focused .CodeMirror-activeline {
+        .CodeMirror-gutter-elt {
+            background: rgba(255, 255, 255, 0.2);
+            color: #000;
+        }
+    }
+}
+
+.CodeMirror-foldgutter-open:after {
+    color: @foreground;
+}
+.CodeMirror-foldgutter-folded:after {
+    color: #8f877f;
+}
+
+.CodeMirror.over-gutter, .CodeMirror-activeline {
+    .CodeMirror-foldgutter-open:after {
+        color: @foreground;
+    }
+}
+
+.CodeMirror-foldmarker {
+    border-color: @background;
+    color: @foreground;
+    background-color: #b2b4b2;
+}
+
+#status-bar {
+    background-color: @background !important;
+}
+
+/* Non-editor styling */
+
+.image-view,
+.not-editor {
+    background-color: @background;
+}
+
+.view-pane .image-view {
+    color: @foreground;
+}

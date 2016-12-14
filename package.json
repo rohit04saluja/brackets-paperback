@@ -1,0 +1,15 @@
+{
+    "name": "rohit04saluja.paperback",
+    "title": "Paperback Theme",
+    "description": "Paperback theme",
+    "homepage": "https://github.com/rohit04saluja/brackets-paperback",
+    "version": "1.0.0",
+    "author": "Rohit Saluja <rohit04saluja@protonmail.com>",
+    "license": "MIT",
+    "theme": {
+        "file": "theme.less",
+        "dark": false,
+        "addModeClass": true
+    },
+    "keywords": ["theme", "paperback", "light", "rohit04saluja"]
+}
